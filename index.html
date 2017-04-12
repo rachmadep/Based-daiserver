@@ -73,7 +73,9 @@
 			</div>
 			<!-- Mobile / Offcanvas Menu End -->
 
-			<div class="uk-container uk-container-center">
+
+
+			<div class="logo-header uk-container uk-container-center">
 				<div class="uk-grid">
 
 					<!-- Logo -->
@@ -86,6 +88,18 @@
 
 					<!-- Domain Search Form -->
 					<div class="uk-width-large-1-2  uk-width-medium-1-1 uk-width-small-1-1">
+
+            <!-- Header Info -->
+            <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1">
+              <ul class="comm-header uk-grid uk-grid-with-medium-1-4 idz-header-contact">
+                <li><i class="uk-icon-globe"></i>Indonesian</li>
+                <li><i class="uk-icon-phone"></i>+62 85640-719633</li>
+                <li><i class="uk-icon-headphones"></i>Live Chat</li>
+                <li><i class="uk-icon-life-bouy "></i><a class="header-link" target="blank" href="https://portal.daiserver.com/submitticket.php">Open Tiket</a></li>
+              </ul>
+            </div>
+            <!-- Header End -->
+
 						<div class="idz-search-domain-block">
 							<div class="idz-header-search-domain">
 
@@ -96,28 +110,9 @@
 									</fieldset>
 								</form>
 							</div>
-							<div class="idz-domain-promo">
-								<ul class="uk-grid uk-grid-collapse uk-grid-width-large-1-4 uk-grid-width-medium-1-4  uk-grid-width-small-1-2 idz-promo-domain-list">
-									<li><img src="images/header/domain-logo/dot-id.png" alt="dot-org">$5 / 60k IDR</li>
-									<li><img src="images/header/domain-logo/dot-com.png" alt="dot-com">$10.00</li>
-									<li><img src="images/header/domain-logo/dot-net.png" alt="dot-net">$11.00</li>
-									<li><img src="images/header/domain-logo/dot-org.png" alt="dot-online">$12.00</li>
-								</ul>
-							</div>
 						</div>
 					</div>
 					<!-- Domain Search Form End -->
-
-					<!-- Header Info -->
-					<div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1">
-						<ul class="uk-grid uk-grid-large uk-grid-with-medium-1-4 idz-header-contact">
-							<li><i class="uk-icon-globe"></i>Indonesian</li>
-							<li><i class="uk-icon-phone"></i>+62 85640-719633</li>
-							<li><i class="uk-icon-headphones"></i>Live Chat</li>
-							<li><i class="uk-icon-life-bouy "></i><a target="blank" href="https://portal.daiserver.com/submitticket.php">Open Tiket</a></li>
-						</ul>
-					</div>
-					<!-- Header End -->
 
 				</div>
 			</div>
@@ -282,7 +277,7 @@
 		</section>
 		<!-- Slideshow End -->
         <!-- Features Section -->
-        <section class="idz-padding-medium idz-bgcolor-gray">
+        <section class="idz-padding-medium idz-bgcolor-white">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
                     <div class="uk-width-large-1-2 uk-width-medium-1-2  uk-width-small-1-1 uk-padding">
@@ -796,6 +791,20 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+</script>
+
+<script>
+$("document").ready(function($){
+  var nav = $('.idz-header-nav');
+
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 80) {
+          nav.addClass("f-nav");
+      } else {
+          nav.removeClass("f-nav");
+      }
+  });
+});
 </script>
 		<!--End of Tawk.to Script-->
 

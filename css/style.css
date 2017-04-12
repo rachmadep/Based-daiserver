@@ -405,13 +405,14 @@ pre {
 }
 /* =============================================== [ 2. Header ] =============================================== */
 #idz-header {
-    height: 166px;
-    padding-top: 47px;
-    padding-bottom: 20px;
+    height: 148px;
+    /*padding-top: 47px;*/
+    /*padding-bottom: 20px;*/
 }
 
 /* [ 2.1 Logo ] */
 .idz-logo {
+  padding-top: 15px;
 }
 
 /* [ 2.2 Domain Search Form ] */
@@ -419,7 +420,8 @@ pre {
     position: relative;
 }
 .idz-header-search-domain {
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
+    /*padding-top: 8px;*/
 }
 .idz-search-domain-form input[type="text"] {
     font-size: 14px;
@@ -457,24 +459,27 @@ pre {
 
 /* [ 2.3 Header Contact ] */
 .idz-header-contact {
-    margin-top: 20px;
+    padding-top: 6px;
+
 }
 .idz-header-contact li {
     font-size: 13px;
     text-transform: lowercase;
-    color: #b6b6b6;
-    margin-bottom: 3px;
+    color: #010101;
+    /*margin-bottom: 3px;*/
 }
 .idz-header-contact li i {
     margin-right: 8px;
     font-size: 15px;
-    color: #a2a2a2;
+    color: #010101;
 }
 
 /* [ 2.4 Heaver Navigation ] */
 .idz-header-nav {
     height: 60px;
-    background-color: #4994cd;
+    z-index: 1;
+    margin-bottom: -40px;
+    background-color: #006687;
 }
 .idz-header-nav.uk-active {
     z-index: 10;
@@ -482,7 +487,7 @@ pre {
     box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2);
 }
 .idz-nav .uk-navbar {
-    background-color: transparent;
+    background-color: #006687;
 }
 .idz-nav .uk-navbar-flip {
     float: left;
@@ -501,7 +506,7 @@ pre {
     color: #4994cd;
 }
 .idz-nav .uk-navbar-nav > li:first-child a {
-    padding-left: 0px;
+    /*padding-left: 0px;*/
 }
 .idz-nav .uk-navbar-nav > li:hover > a,
 .idz-nav .uk-navbar-nav > li > a:focus,
@@ -522,7 +527,7 @@ pre {
 .idz-nav .uk-navbar-nav > li.uk-active a,
 .idz-header-nav.uk-active > li.uk-active > a {
     background-color: transparent;
-    color: #c3e5ff;
+    color: #ff9b00;
 }
 .idz-header-nav.uk-active .idz-nav .uk-navbar-nav > li.uk-active > a {
     color: #221f1f;
@@ -690,12 +695,14 @@ pre {
     height: 480px;
     overflow: hidden;
     position: relative;
+    /*margin-top: -40px;*/
+    /*z-index: -1;*/
 }
 #idz-slideshow .uk-slideshow > li {
     height: 480px;
 }
 #idz-slideshow .uk-slideshow > li.slide-bg-1 {
-    background-color: rgba(73, 148, 205, .65);
+    /*background-color: rgba(73, 148, 205, .65);*/
     background-repeat: repeat;
     background-image: url('../images/sample/slideshow/slideshow-pattern.png');
 }
@@ -915,7 +922,9 @@ pre {
 }
 .idz-pricing-list li .idz-pricing-content {
     padding: 30px 26px 35px 25px;
-    border: 2px solid rgba(73, 148, 205, 1);
+    /*border: 2px solid rgba(73, 148, 205, 1);*/
+    border-radius: 5%;
+    background: #e8e8e8;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -2580,4 +2589,37 @@ ul.overview-list {
     line-height: 46px;
     display: none;
     z-index: 2;
+}
+
+/* =============================================== [ 22. Footer ] =============================================== */
+/* Tambahan rachmad */
+/*HEADER*/
+/*.comm-header{
+  margin-left: 0px;
+  background-color: #006687;
+  padding-top: 0px;
+}*/
+.uk-icon-globe{
+  /*padding-left: 880px;*/
+}
+.header-link{
+  color: #000;
+}
+a:hover, .header-link:hover {
+    color: #41adff;
+}
+
+.logo-header{
+  /*padding-top: 10px;*/
+  padding-bottom: 10px;
+}
+.idz-menu-wrapper{
+  background-color: #006687;
+}
+.f-nav{  /* To fix main menu container */
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
